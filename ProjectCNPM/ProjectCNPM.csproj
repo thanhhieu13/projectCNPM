@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{086D6557-BC66-4EBE-9655-F49FA99C78FA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProjectCNPM</RootNamespace>
+    <AssemblyName>ProjectCNPM</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStudent.Designer.cs">
+      <DependentUpon>AddStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoThi.cs" />
+    <Compile Include="Const1.cs" />
+    <Compile Include="Diem.cs" />
+    <Compile Include="FormBaoDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBaoDiem.Designer.cs">
+      <DependentUpon>FormBaoDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBaoThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBaoThi.Designer.cs">
+      <DependentUpon>FormBaoThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBaoThidtgv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBaoThidtgv.Designer.cs">
+      <DependentUpon>FormBaoThidtgv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDangki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDangki.Designer.cs">
+      <DependentUpon>FormDangki.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDiem.Designer.cs">
+      <DependentUpon>FormDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditSinhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditSinhVien.Designer.cs">
+      <DependentUpon>FormEditSinhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHelp.Designer.cs">
+      <DependentUpon>FormHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPhongThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPhongThi.Designer.cs">
+      <DependentUpon>FormPhongThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormShowBaoThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormShowBaoThi.Designer.cs">
+      <DependentUpon>FormShowBaoThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormShowDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormShowDiem.Designer.cs">
+      <DependentUpon>FormShowDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormShowInfoSinhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormShowInfoSinhVien.Designer.cs">
+      <DependentUpon>FormShowInfoSinhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsQLDM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsQLDM.Designer.cs">
+      <DependentUpon>FormsQLDM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUsers.Designer.cs">
+      <DependentUpon>FormUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListBaoThi.cs" />
+    <Compile Include="ListDiem.cs" />
+    <Compile Include="ListPhongThi.cs" />
+    <Compile Include="ListSinhVien.cs" />
+    <Compile Include="ListUser.cs" />
+    <Compile Include="PhongThi.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SinhVien.cs" />
+    <Compile Include="User.cs" />
+    <EmbeddedResource Include="AddStudent.resx">
+      <DependentUpon>AddStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBaoDiem.resx">
+      <DependentUpon>FormBaoDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBaoThi.resx">
+      <DependentUpon>FormBaoThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBaoThidtgv.resx">
+      <DependentUpon>FormBaoThidtgv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDangki.resx">
+      <DependentUpon>FormDangki.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDiem.resx">
+      <DependentUpon>FormDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditSinhVien.resx">
+      <DependentUpon>FormEditSinhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHelp.resx">
+      <DependentUpon>FormHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPhongThi.resx">
+      <DependentUpon>FormPhongThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormShowBaoThi.resx">
+      <DependentUpon>FormShowBaoThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormShowDiem.resx">
+      <DependentUpon>FormShowDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormShowInfoSinhVien.resx">
+      <DependentUpon>FormShowInfoSinhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsQLDM.resx">
+      <DependentUpon>FormsQLDM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUsers.resx">
+      <DependentUpon>FormUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zyro-image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accept %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loupe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maintenance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\floppy-disk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\system-update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\research.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\NewFolder1\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
